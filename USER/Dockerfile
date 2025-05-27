@@ -1,2 +1,4 @@
 FROM almalinux:8
-CMD ["sleep", "10"]
+RUN adduser VENKATESH
+USER VENKATESH
+CMD ["sleep", "50"]
