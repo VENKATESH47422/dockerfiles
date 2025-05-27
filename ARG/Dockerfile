@@ -4,6 +4,7 @@ RUN adduser $username
 USER $username 
 ARG COURSE
 ARG LISTENER
+RUN echo "COURSE: ${COURSE}, LISTENER: ${LISTENER}" 
 ENV COURSE=${COURSE}
 ENV LISTENER=${LISTENER}
 CMD ["sleep", "100"]
